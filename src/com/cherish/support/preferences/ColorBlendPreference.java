@@ -30,7 +30,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.android.internal.util.cherish.cherishUtils;
+import com.android.internal.util.cherish.CherishUtils;
 
 import com.cherish.support.R;
 import com.cherish.support.colorpicker.ColorPickerDialog;
@@ -313,7 +313,7 @@ public class ColorBlendPreference extends Preference
     private void updateDialogSliderPreview() {
         int currentPreview = mDialogColorPreviewSlider.getProgress();
         mDialogPreviewColorBetween.setBackgroundColor(
-                cherishUtils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
+                CherishUtils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
                         mPreviewBlendReverse, currentPreview));
         mDialogColorPreviewText.setText(
                 getContext().getString(R.string.color_blend_preview, currentPreview));
@@ -373,7 +373,7 @@ public class ColorBlendPreference extends Preference
         }
         if (mViewColorBetween != null) {
             mViewColorBetween.setBackgroundColor(
-                    cherishUtils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
+                    CherishUtils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
         }
     }
 
