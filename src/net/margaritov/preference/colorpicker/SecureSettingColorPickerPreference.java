@@ -20,7 +20,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.provider.Settings;
 
-import com.spark.support.preferences.SecureSettingsStore;
+import com.cherish.support.preferences.SecureSettingsStore;
 
 public class SecureSettingColorPickerPreference extends ColorPickerPreference {
 

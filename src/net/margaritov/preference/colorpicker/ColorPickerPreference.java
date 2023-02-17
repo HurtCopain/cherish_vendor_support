@@ -38,7 +38,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.spark.support.R;
+import com.cherish.support.R;
 
 /**
  * A preference type that allows a user to choose a time
